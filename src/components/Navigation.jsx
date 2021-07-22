@@ -41,10 +41,9 @@ function Navigation(props){
 
                 <div class="header__links hide-for-mobile">
                     <a href="/">Home</a>
+                    <a href="/pcp_messages">Messages</a>
                     <a href="/lab_reports">Lab Reports</a>
-                    <a href="/patient_search">Patient Search</a>
-                    <a href="/pcp_messages">PCP Messages</a>
-                    <a href="/request_appt">Request Appointment</a>
+                    <a href="/patient_search">Patients</a>
                     <a href="/resources">Resources</a>
                     <a href="/logout">Logout</a>
                 </div>
