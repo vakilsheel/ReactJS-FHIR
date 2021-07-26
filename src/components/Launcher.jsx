@@ -18,7 +18,7 @@ export default class Launcher extends React.Component {
      */
     componentDidMount() {
         SMART.authorize({
-            clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
+            // clientId: "127afa4e-286f-47ae-ac19-ecc3d7f4ddac",
             scope: "launch profile fhirUser openid online_access launch/patient",
             redirectUri: "./Home",
             iss: "https://launch.smarthealthit.org/v/r4/sim/eyJrIjoiMSJ9/fhir/Practitioner",
