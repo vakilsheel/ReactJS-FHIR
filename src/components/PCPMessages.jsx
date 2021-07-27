@@ -1,4 +1,4 @@
-/* import React from 'react';
+import React from 'react';
 
 function PCPMessages(props){
     return(
@@ -8,7 +8,7 @@ function PCPMessages(props){
     );
 }
 
-export default PCPMessages; */
+export default PCPMessages; 
 
 
 /* import React from 'react';
