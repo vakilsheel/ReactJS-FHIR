@@ -10,7 +10,8 @@ function App(){
       <Router>
         <Navigation/>
         <Switch>
-          <Route path="/" exact component={() => <Home />} />
+          <Route path="/" exact component={() => <Launcher />} />
+          <Route path="/Home" exact component={() => <Home />} />
           <Route path="/lab_reports" exact component={() => <LabReports />} />
           <Route path="/patient_search" exact component={() => <PatientSearch />} />
           <Route path="/pcp_messages" exact component={() => <PCPMessages />} />
