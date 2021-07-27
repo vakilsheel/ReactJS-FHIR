@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import { Navigation, Footer, Home, LabReports, PatientSearch, PCPMessages, Resources } from "./components";
+import { Navigation, Footer, Home, LabReports, PatientSearch, PCPMessages, Resources, Launcher } from "./components";
 import './scss/style.scss';
 
 function App(){
