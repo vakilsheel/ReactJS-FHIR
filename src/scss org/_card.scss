@@ -33,27 +33,19 @@
 }
 
 .total-wrapper-dsktp {
-    background-color: $white;
+    background-color: $limeGreen;
     padding: 2%;
-    color: $green;
+    color: $white;
     box-shadow: #666 0px 7px 7px 0px;
     flex-flow: column wrap;
     display: flex;
-    // margin-left: 24px;
+    margin-left: 24px;
     position: relative;
-    // margin-top: 10px;
-    // margin-right: 24px;
+    margin-top: 10px;
+    margin-right: 50px;
 }
 
 .cards {
-    // padding-top:1.625rem;
-    padding-bottom: 1.625rem;
-    border-radius: 5px;
-    border-color: $lightBlue;
+    position: inherit;
     margin-bottom: 65px;
-    position: relative;
-    width: calc(100% - 3rem);
-    left: 50%;
-    transform: translateX(-50%);
-    // margin-top: 32px;
 }

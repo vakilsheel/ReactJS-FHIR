@@ -40,7 +40,7 @@ function Navigation(props){
                 </a>
 
                 <div class="header__links hide-for-mobile">
-                    <a href="/">Home</a>
+                    <a href="/Home">Home</a>
                     <a href="/pcp_messages">Messages</a>
                     <a href="/lab_reports">Lab Reports</a>
                     <a href="/patient_search">Patients</a>

@@ -326,18 +326,15 @@ button, .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 24px;
   position: relative;
+  margin-top: 10px;
+  margin-right: 50px;
 }
 
 .cards {
-  padding-bottom: 1.625rem;
-  border-radius: 5px;
+  position: inherit;
   margin-bottom: 65px;
-  position: relative;
-  width: calc(100% - 3rem);
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 .footerStyle {

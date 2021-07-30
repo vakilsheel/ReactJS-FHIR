@@ -12,7 +12,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import './centerA.css';
+//import './centerA.css';
 
 //import { Button } from 'semantic-ui-react'
 
@@ -111,32 +111,88 @@ function Resources(props){
         <h2 style={{color: '#8F8F8F'}}>Learn More About Genetic Mutations</h2>
         </CardContent>
       <CardActions>
-      <a class='centerIt' href=""> <Button size="Large">Resource 1</Button> </a> 
-      <a class='centerIt' href=""> <Button size="Large">Resource 2</Button> </a> 
-      <a class='centerIt' href=""> <Button size="Large">Resource 3</Button> </a> 
-      <a class='centerIt' href=""> <Button size="Large">Resource 4</Button> </a> 
+      <a href="https://clinicalgenome.org/" target="_blank" rel="noopener noreferrer"> <Button size="Large">ClinGen: Clinical Genome Resource</Button> </a> 
+      <a href="https://www.cancer.gov/publications" target="_blank" rel="noopener noreferrer"> <Button size="Large">Cancer.gov publications </Button> </a> 
+      <a href="https://www.ncbi.nlm.nih.gov/books/NBK22183/" target="_blank" rel="noopener noreferrer"> <Button size="Large">Genes and Diseases</Button> </a> 
+      <a href="https://ncithesaurus.nci.nih.gov/ncitbrowser/" target="_blank" rel="noopener noreferrer"> <Button size="Large">NCI Thesauras</Button> </a> 
       </CardActions>
       </Card>
        </div>
 
     <p> </p>
     
-    <div style={{textAlign: 'center'}}>
+  <div style={{textAlign: 'center'}}>
     <Card className={classes.root} variant="outlined">
         <CardContent>
         <h2 style={{color: '#8F8F8F'}}>Mutation Selection</h2>
         </CardContent>
-      <CardActions>
+      {/* <CardActions>
       <div style={{textAlign: 'center'}}> 
         <a href=""> <Button style={{marginRight: 5 + 'em'}} size="Large">MSH2</Button> </a> 
         <a href=""> <Button style={{marginRight: 5 + 'em'}} size="Large">EGFR</Button> </a> 
         <a href=""> <Button style={{marginRight: 5 + 'em'}} size="Large">BRCA 1/2</Button> </a> 
         <a href=""> <Button style={{marginRight: 5 + 'em'}} size="Large">KRAS</Button> </a> 
-        </div>
-      </CardActions>
+    </div> 
+      </CardActions> */}
       </Card>
-    </div>
+    </div> 
 
+    <div className="">
+                <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+            <Typography>MSH2</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+            <a href="https://medlineplus.gov/genetics/gene/msh2/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> Medline Plus </Button>  </a> 
+            <a href="https://www.mayocliniclabs.com/test-catalog/Clinical+and+Interpretive/35510" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> Mayo Clinic </Button>  </a> 
+            <a href="https://search.clinicalgenome.org/kb/genes/HGNC:7325" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> ClinGen MSH2 </Button>  </a> 
+            <a href="https://www.mycancergenome.org/content/alteration/msh2-mutation/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> My Cancer Genome </Button>  </a> 
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+          <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+            <Typography>EGFR</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+            <a href="https://search.clinicalgenome.org/kb/genes/HGNC:3236" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> ClinGen </Button>  </a> 
+            <a href="https://medlineplus.gov/genetics/gene/egfr/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> Medline Plus </Button>  </a> 
+            <a href="https://www.mayocliniclabs.com/test-catalog/Clinical+and+Interpretive/35404" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> Mayo Clinic 1</Button>  </a> 
+            <a href="https://www.mayocliniclabs.com/test-catalog/Clinical+and+Interpretive/113402" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> Mayo Clinic 2</Button>  </a> 
+            <a href="https://clevelandcliniclabs.com/wp-content/assets/pdfs/technical-briefs/egfr-88871.pdf" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">  Cleveland Clinic </Button>  </a> 
+            <a href="https://www.mycancergenome.org/content/alteration/egfr-mutation/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large"> My Cancer Genome </Button>  </a> 
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+            <Typography>BRCA 1/2</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+            <a href="https://medlineplus.gov/genetics/gene/brca1/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">Medline Plus BRCA 1</Button>  </a> 
+            <a href="https://medlineplus.gov/genetics/gene/brca2/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">Medline Plus BRCA 2</Button>  </a> 
+            <a href="https://search.clinicalgenome.org/kb/genes/HGNC:1100" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">ClinGen BRCA 1</Button>  </a> 
+            <a href="https://search.clinicalgenome.org/kb/genes/HGNC:1101" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">ClinGen BRCA 2</Button>  </a> 
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+          <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+            <Typography>KRAS</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+            <a href="https://medlineplus.gov/genetics/gene/kras/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">Medline Plus</Button>  </a> 
+            <a href="https://search.clinicalgenome.org/kb/genes/HGNC:6407/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">ClinGen</Button>  </a> 
+            <a href="https://www.cancer.gov/research/key-initiatives/ras/ras-central/blog/2021/update-kras-cancer-comutations" target="_blank" rel="noopener noreferrer" size="Large"> <Button variant="contained" color="primary">NIH</Button>  </a> 
+            <a href="https://link.springer.com/article/10.1007/s10555-020-09903-9" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">Springer Link</Button>  </a> 
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+            </div>
       </div>
     );
 }
