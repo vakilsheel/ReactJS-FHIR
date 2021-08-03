@@ -18,6 +18,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
+import reportResult from './';
 
 const useStyles2 = makeStyles((theme) => ({
   appBar: {
@@ -122,13 +123,13 @@ const Accordion = withStyles({
                 </div>
                 <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
           <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography>Report 1</Typography>
+            <Typography>Genomic Results</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
             <div>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Report
+        Genomics Sequencing Report (8/03/21)
       </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
@@ -143,7 +144,8 @@ const Accordion = withStyles({
             <ListItemText primary="Phone ringtone" secondary="Titania" />
           </ListItem>
           <Divider />
-          <p>Patient Lab Report</p>
+          <h1>Hi</h1>
+          <Button>Word</Button>
         </List>
       </Dialog>
     </div>
@@ -153,13 +155,13 @@ const Accordion = withStyles({
         </Accordion>
         <Accordion square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
           <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-            <Typography>Report 2</Typography>
+            <Typography>Diagnostic Results</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
             <div>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Report
+        Diagnostic Reports (08/03/21)
       </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
@@ -174,7 +176,7 @@ const Accordion = withStyles({
             <ListItemText primary="Phone ringtone" secondary="Titania" />
           </ListItem>
           <Divider />
-          <p>Patient Lab Report</p>
+          <p>Patient Report</p>
         </List>
       </Dialog>
     </div>
@@ -184,13 +186,13 @@ const Accordion = withStyles({
         </Accordion>
         <Accordion square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
           <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography>Report 3</Typography>
+            <Typography>Pathology Results</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
             <div>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Report
+        Pathology Reports (08/03/21)
       </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
@@ -215,13 +217,13 @@ const Accordion = withStyles({
         </Accordion>
         <Accordion square expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
           <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-            <Typography>Report 4</Typography>
+            <Typography>Other Results</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
             <div>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-        Report
+        Other Reports (08/03/21)
       </Button>
       <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar className={classes.appBar}>
