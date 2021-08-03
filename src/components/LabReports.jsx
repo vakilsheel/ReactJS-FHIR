@@ -349,7 +349,7 @@ const Accordion = withStyles({
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-            <a href="" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">Genomic Sequencing Results (07/15/21)</Button>  </a>
+            <a href="https://genomic-report.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <Button variant="contained" color="primary" size="Large">Genomic Sequencing Results (07/15/21)</Button>  </a>
             </Typography>
           </AccordionDetails>
         </Accordion>

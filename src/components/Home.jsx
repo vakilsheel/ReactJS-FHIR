@@ -43,10 +43,8 @@ export function Page(props){
 function Home(props) {
     return(
         <div className="cards">
-            <Page buttonMessage="Send/View Messages" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="Provider Messages"/>
-            <Page buttonMessage=" See Lab Reports" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="Lab Reports"/>
+            <Page buttonMessage="Send/View Messages" content="Update: New Message from Mariana Acuna!" subject="Provider Messages"/>
+            <Page buttonMessage=" See Lab Reports" content="Reports for Mariana Acuna available" subject="Lab Reports"/>
              <Page buttonMessage="Search Patients" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nullam lacus tellus, semper et nulla quis, pharetra cursus metus. Fusce tincidunt mattis diam." subject="Patient Search"/>
             <Page buttonMessage="See Resources" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
