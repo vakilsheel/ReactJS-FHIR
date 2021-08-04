@@ -340,7 +340,7 @@ const Accordion = withStyles({
         return(
             <div className="">
                 <div style={{textAlign: 'center'}}>
-                <h1>Lab Reports</h1>
+                <h1>Lab Results</h1>
               
                 </div>
                 <Accordion square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
